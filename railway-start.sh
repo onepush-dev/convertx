@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Creates the ConvertX owner account on a private port before the public port
-# (PORT, default 3000) opens. ConvertX lets the first visitor register even
+# (PORT, default 8080) opens. ConvertX lets the first visitor register even
 # with ACCOUNT_REGISTRATION=false, so this closes that window on Railway.
 set -euo pipefail
-PUBLIC_PORT="${PORT:-3000}"
+# Railway injects PORT (8080 by default); the template domain targets 8080.
+PUBLIC_PORT="${PORT:-8080}"
 BOOT_PORT="${CONVERTX_BOOTSTRAP_PORT:-3999}"
 MARKER=/app/data/.railway-owner-created
 mkdir -p /app/data
