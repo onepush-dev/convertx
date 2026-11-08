@@ -4,7 +4,7 @@
 FROM ghcr.io/c4illin/convertx:v0.20.0@sha256:6259e0c1e063120b1ddbc6937372a83be58182b2c9dc82264f58e100907b3e51
 COPY railway-start.sh /railway-start.sh
 RUN chmod 0755 /railway-start.sh
-ENV PORT=3000 \
+ENV PORT=8080 \
     ACCOUNT_REGISTRATION=false \
     ALLOW_UNAUTHENTICATED=false \
     HTTP_ALLOWED=false \
