@@ -29,5 +29,5 @@ jobs:
             org.opencontainers.image.licenses=AGPL-3.0
           tags: |
             ghcr.io/onepush-dev/convertx:latest
-            ghcr.io/onepush-dev/convertx:v0.20.0-r1
+            ghcr.io/onepush-dev/convertx:v0.20.0-r2
           platforms: linux/amd64
